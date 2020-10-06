@@ -12,7 +12,7 @@
  
  Common graph (Chronological)
  
- Boxes [food, spotfy, youtube, gym, .........]
+ Boxes [food, ........., any topic]
  
  HOME PAGE //
  
@@ -44,15 +44,11 @@ Amount -
  
  API -
  
+ example
  http://api.ft.com/
  
  Database -
  * Structure ->
- 
- login - 
- 
- email (unique)
- password
  
  
  
