@@ -12,7 +12,7 @@ import './App.css';
 const loaderCSS=css`
 margin-top: 25px;
 margin-bottom: 25px;
-`
+`;
 
 function App() {
   return (
