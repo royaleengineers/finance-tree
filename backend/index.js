@@ -24,6 +24,25 @@ app.get('/perMonth', (req, res)=>{
     });
 });
 
+//Queries for getting income and expense for today
+app.get('/dailyExpense', (req, res)=>{
+    //var today=  //Solve
+    connection.query(`SELECT expense FROM expenses WHERE time=${today} and user=? ORDER BY id DESC`, [req.query.user], (result, err)=>{
+        if(!err){
+            res.send(JSON.stringify(result));
+        }
+    });
+});
+app.get('/dailyIncome', (req, res)=>{
+    //var today=  //Solve
+    connection.query(`SELECT income FROM incomes WHERE time=${today} and user=? ORDER BY month DESC`, [req.query.user], (result, err)=>{
+        if(!err){
+            res.send(JSON.stringify(result));
+        }
+    });
+});
+
+
 app.get('/sample', (req, res)=>{
     var data = {
         'Jan':30,
