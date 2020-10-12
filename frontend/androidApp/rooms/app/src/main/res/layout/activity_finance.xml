@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context=".FinanceActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="167dp"
+        android:layout_height="167dp"
+        android:backgroundTint="#333333"
+        android:src="@drawable/ic_back_btn"
+        app:borderWidth="3dp"
+        android:id="@+id/back_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finance"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/back_btn"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="167dp"
+        android:layout_height="167dp"
+        android:backgroundTint="#333333"
+        android:src="@drawable/ic_done_btn"
+        android:id="@+id/done_btn"
+        app:borderWidth="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="340dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:id="@+id/sub_items"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/sub_items"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_room_item_shape"
+        android:text="add item"/>
+
+</RelativeLayout>
